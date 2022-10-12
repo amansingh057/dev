@@ -1,30 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo list</title>
-</head>
-<body>
-    <!-- <% if(Kindofday == "Saturday" || Kindofday=="Sunday"){ %>
-        <h1 style="color: purple;"><%= Kindofday %> list </h1>
-   <% }else{ %>
-        <h1 style="color: blue;"><%= Kindofday %> list </h1>
-   <% } %> -->
-   <h1> <%= Kindofday %> </h1>
-   <ul>
-    <!-- <li>Buy Food</li>
-    <li></li>
-    <li>Eat the food</li> -->
-    
-    <% for(i=0;i<newListItem.length;i++){ %>
-        <li> <%= newListItem[i] %> </li>
-    <%} %>
-   </ul>
-   <form action="/" method="post">
-        <input type="text" name="newItem">
-        <button type="submit" name="button" >ADD</button>
-   </form>
-</body>
-</html>
+<%- include("header") -%>
+   <div class="box" id="heading">
+        <h1> <%= ListTitle %> </h1>
+   </div>
+   
+   <div class="box">
+        <!-- <li>Buy Food</li>
+        <li></li>
+        <li>Eat the food</li> -->
+        
+        <% for(i=0;i<newListItem.length;i++){ %>
+            <div class="item">
+                <input type="checkbox">
+               <p><%= newListItem[i] %></p> 
+            </div>
+        <%} %>
+        <form class="item" action="/" method="post">
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button type="submit" name="list" value=<%= ListTitle %> >+</button>
+       </form>
+   </div>
+   <%- include("footer") -%>
