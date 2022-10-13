@@ -3,7 +3,7 @@
 <p><%= content %></p>
 <% posts.forEach(function (ele){ %>
     <h1><%= ele.title %></h1>
-    <p><%= ele.body %></p>
+    <p><%= ele.body.substring(0,100) + "..." %> <a href="/posts/<%=ele.title%>">Read More</a></p> 
     <% } )%>
 
 <%- include("partials/footer") -%>
