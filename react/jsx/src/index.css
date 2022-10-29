@@ -15,3 +15,10 @@ code {
 .heading{
   color: red;
 }
+ul{
+  color: blue;
+}
+.food-img{
+  height: 100px;
+  width: 100px;
+}
