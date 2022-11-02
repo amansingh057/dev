@@ -10,6 +10,7 @@ body {
 
 h1 {
   font-size: 100px;
+  width: 38rem;
 }
 
 .container {
@@ -20,7 +21,7 @@ button {
   display: inline-block;
   background-color: #6bbe92;
   border: 0;
-  width: 60px;
+  width: 241px;
   margin: 10px;
   text-align: center;
   color: #fff;

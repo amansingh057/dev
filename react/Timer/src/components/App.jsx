@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Time from "./Time";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,11 +11,14 @@ function App() {
     setCount(count - 1);
   }
   return (
-    <div className="container">
-      <h1>{count}</h1>
-      <button onClick={inc}>+</button>
-      <button onClick={dec}>-</button>
-    </div>
+    <>
+      <Time />
+      <div className="container">
+      <button onClick={inc}>+</button> 
+        <h1 style={{width:"auto"}} >{count}</h1>
+        <button onClick={dec}>-</button>
+      </div>
+    </>
   );
 }
 
