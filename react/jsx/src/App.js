@@ -1,6 +1,7 @@
 // import List from "./components/List";
-import Calist from "./components/Calist";
-import State from "./components/State";
+// import Calist from "./components/Calist";
+import Destructuring from "./components/Destructuring";
+// import State from "./components/State";
 import Time from "./components/Time";
 // const Fname = "Aman"
 // const Lname = "Singh"
@@ -15,7 +16,8 @@ function App() {
     // </div>
     <>
       <Time/>
-      <State/>
+      {/* <State/> */}
+      <Destructuring/>
       {/* <Calist/> */}
       {/* <List/> */}
     </>
